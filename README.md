@@ -50,7 +50,7 @@ project-folder/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Aravind-59/Simple-EJS-Blog-Platform-using-Node.js-and-Express.git
+git clone https://github.com/Aravind-Golla/Simple-EJS-Blog-Platform-using-Node.js-and-Express.git
 cd ejs-blog-app
 ```
 
