@@ -1,0 +1,112 @@
+/* Universal box-sizing for easier layout */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  padding: 2rem;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Inputs and textareas */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 1rem 0;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 3px #007bff;
+}
+
+/* Button and .button class (for styled links like New Post) */
+.button,
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white !important;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+}
+
+.button:hover,
+button:hover {
+  background-color: #0056b3;
+}
+
+.button:focus,
+button:focus {
+  outline: 2px solid #0056b3;
+  outline-offset: 2px;
+}
+
+.button:active,
+button:active {
+  background-color: #004080;
+}
+
+/* Blog post styling */
+.post {
+  border-top: 1px solid #ccc;
+  padding: 1rem 0;
+  text-align: left;
+}
+
+.post-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-body {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Link styling for titles or anywhere else */
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 500px) {
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
