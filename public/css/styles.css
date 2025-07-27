@@ -99,6 +99,48 @@ a:hover,
 a:focus {
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+  .container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  form input[type="text"],
+  form textarea {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  form button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+
+  a {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  form textarea {
+    height: 150px;
+  }
+}
 
 /* Responsive design for mobile */
 @media (max-width: 500px) {
